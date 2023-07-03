@@ -1,0 +1,12 @@
+version: "3.1"
+
+services:
+  test-aws:
+    build: .
+    container_name: "test-aws"
+    restart: "always"
+    ports:
+      - 3000:3000
+    environment:
+      AWS_ACCESS_KEY_ID: "AKIA3MWBKZ7VM6GPQ4UB"
+      AWS_SECRET_ACCESS_KEY: "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"
